@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head lang="es">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Lista de Tareas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles.css" />
+  </head>
+  <body>
+    <script src="./script.js"></script>
+    <main class="content">
+      <h1 class="main-title">Mi lista de Contacto</h1>
+      <div class="container">
+        <div class="actions-container">
+          <section class="action-section">
+            <h2>Nuevo Contacto</h2>
+            <form class="action-form" id="create-task-form">
+              <label for="new-task-id" class="form-label"
+                >Id:
+                <input
+                  type="text"
+                  id="new-task-id"
+                  name="new-task-id"
+                  placeholder="Ej: 1234567890"
+                  required
+                />
+              </label>
+              <label for="new-task-name" class="form-label"
+                >Nombres:
+                <input
+                  type="text"
+                  id="new-task-name"
+                  name="new-task-name"
+                  placeholder="Ej: Jorge David"
+                  required
+                />
+              </label>
+
+              <label for="new-task-lastname" class="form-label"
+                >Apellidos:
+                <input
+                  type="text"
+                  id="new-task-lastname"
+                  name="new-task-id"
+                  placeholder="Ej: Tirado Perez"
+                  required
+                />
+              </label>
+              <label for="new-task-year" class="form-label"
+                >Edad:
+                <input
+                  type="text"
+                  id="new-task-year"
+                  name="new-task-id"
+                  placeholder="Ej: 26"
+                  required
+                />
+              </label>
+              <label for="new-task-phone" class="form-label"
+                >Teléfono:
+                <input
+                  type="text"
+                  id="new-task-phone"
+                  name="new-task-id"
+                  placeholder="Ej: 3103216549"
+                  required
+                />
+              </label>
+              <label for="new-task-city" class="form-label"
+                >Ciudad:
+                <input
+                  type="text"
+                  id="new-task-city"
+                  name="new-task-id"
+                  placeholder="Ej: Itagui"
+                  required
+                />
+              </label>
+              <label for="new-task-direction" class="form-label"
+                >Dirección:
+                <input
+                  type="text"
+                  id="new-task-direction"
+                  name="new-task-id"
+                  placeholder="Ej: Cra 58 #40-30 Int 1020"
+                  required
+                />
+              </label>
+              <button type="submit" class="form-button">Crear</button>
+            </form>
+          </section>
+          <section class="action-section">
+            <h2>Editar Contacto</h2>
+            <form class="action-form" id="create-edit-form">
+              <label for="new-task-id" class="form-label"
+                >Id:
+                <input
+                  type="edit"
+                  id="new-edit-id"
+                  name="new-completed-id"
+                  required
+                />
+              </label>
+
+              <label for="new-task-id" class="form-label"
+                >Nombres:
+                <input
+                  type="edit"
+                  id="new-edit-name"
+                  name="new-completed-id"
+                  required
+                />
+              </label>
+              <label for="new-task-id" class="form-label"
+                >Apellidos:
+                <input
+                  type="edit"
+                  id="new-edit-lastname"
+                  name="new-completed-id"
+                  required
+                />
+              </label>
+              <label for="new-task-id" class="form-label"
+                >Edad:
+                <input
+                  type="edit"
+                  id="new-edit-year"
+                  name="new-completed-id"
+                  required
+                />
+              </label>
+              <label for="new-task-id" class="form-label"
+                >Teléfono:
+                <input
+                  type="edit"
+                  id="new-edit-phone"
+                  name="new-completed-id"
+                  required
+                />
+              </label>
+              <label for="new-task-id" class="form-label"
+                >Ciudad:
+                <input
+                  type="edit"
+                  id="new-edit-city"
+                  name="new-completed-id"
+                  required
+                />
+              </label>
+              <label for="new-task-id" class="form-label"
+                >Dirección:
+                <input
+                  type="edit"
+                  id="new-edit-direction"
+                  name="new-completed-id"
+                  required
+                />
+              </label>
+
+              <button type="submit" class="form-button">Editar</button>
+            </form>
+          </section>
+          <section class="action-section">
+            <h2>Eliminar Contacto</h2>
+            <form class="action-form" id="create-delete-form">
+              <label for="new-task-id" class="form-label"
+                >Id:
+                <input
+                  type="delete"
+                  id="new-delete-id"
+                  name="new-delete-id"
+                  required
+                />
+              </label>
+
+              <button type="submit" class="form-button">Eliminar</button>
+            </form>
+          </section>
+          <section class="action-section">
+            <h2>Mover contacto parte frontal</h2>
+            <form class="action-form" id="create-move-form">
+              <label for="new-task-id" class="form-label"
+                >Id:
+                <input
+                  type="move"
+                  id="new-move-id"
+                  name="new-move-id"
+                  required
+                />
+              </label>
+              <button type="submit" class="form-button">
+                Enviar hacia delante
+              </button>
+            </form>
+          </section>
+        </div>
+        <section class="list-container">
+          <h2>Lista de tareas</h2>
+          <table class="task-list">
+            <thead class="list-head">
+              <tr class="list-row">
+                <th class="list-head-item">Id</th>
+                <th class="list-head-item">Nombre</th>
+                <th class="list-head-item">Apellido</th>
+                <th class="list-head-item">Edad</th>
+                <th class="list-head-item">Teléfono</th>
+                <th class="list-head-item">Ciudad</th>
+                <th class="list-head-item">Dirección</th>
+              </tr>
+            </thead>
+            <tbody id="list-body"></tbody>
+          </table>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
